@@ -1,0 +1,14 @@
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\AppATM.exe
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\AppATM.deps.json
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\AppATM.runtimeconfig.json
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\AppATM.dll
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\AppATM.pdb
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.AssemblyInfoInputs.cache
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.AssemblyInfo.cs
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.csproj.CoreCompileInputs.cache
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.dll
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\refint\AppATM.dll
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.pdb
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.genruntimeconfig.cache
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\ref\AppATM.dll

@@ -1,0 +1,14 @@
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\BankAcc.exe
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\BankAcc.deps.json
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\BankAcc.runtimeconfig.json
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\BankAcc.dll
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\bin\Debug\net8.0\BankAcc.pdb
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\BankAcc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\BankAcc.AssemblyInfoInputs.cache
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\BankAcc.AssemblyInfo.cs
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\BankAcc.csproj.CoreCompileInputs.cache
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\BankAcc.dll
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\refint\BankAcc.dll
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\BankAcc.pdb
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\BankAcc.genruntimeconfig.cache
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\ref\BankAcc.dll
