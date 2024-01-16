@@ -97,9 +97,11 @@
             login();
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("DEPOSIT ACCOUNT SERVICE.");
-            Console.WriteLine("How much money do you want to deposit?");
             Console.ResetColor();
+            Console.WriteLine("How much money do you want to deposit?");          
             enterAmount();
+            Console.WriteLine("Insert money into, please!");
+            Console.WriteLine("Please wait for countting....");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Deposit acount successed. ");
             Console.ResetColor();
@@ -111,14 +113,16 @@
             login();
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("WITHDRAW ACCOUNT SERVICE.");
-            Console.WriteLine("How much money do you want to withdraw?");
             Console.ResetColor();
+            Console.WriteLine("How much money do you want to withdraw?");
             enterAmount();
             double fee = (amount * 0.067 / 100);
             if ((amount + fee) < accountList[currentID].Balance)
             {
+                Console.WriteLine("Please wait for countting....");
                 accountList[currentID].Balance -= (amount + fee);
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Take money, please!");
+                Console.ForegroundColor = ConsoleColor.Green;                
                 Console.WriteLine("Withdaw successed. ");
                 Console.ResetColor();
             }
@@ -134,7 +138,9 @@
         public void ckeckAccount()
         {
             login();
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("YOUR ACCOUNT'S INFORMATION.");
+            Console.ResetColor();
             Console.WriteLine("User name: " + accountList[currentID].UserName);
             Console.WriteLine("Balance: " + accountList[currentID].Balance);
         }
@@ -144,7 +150,7 @@
                 Console.WriteLine("1: 500.000 vnd");
                 Console.WriteLine("2: 1.000.000 vnd");
                 Console.WriteLine("3: 1.500.000 vnd");
-                Console.WriteLine("4: Other.");
+                Console.WriteLine("4: Other amount");
                 Console.WriteLine("Selecct amount:  ");
                 op = int.Parse(Console.ReadLine());
                 switch (op)
@@ -163,14 +169,13 @@
                         {
                             Console.WriteLine("Enter amount: ");
                             amount = int.Parse(Console.ReadLine());
-                            if (amount % 50000 != 0)
-                            {
+                        if (amount % 50000 != 0)
+                        {
                             Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("The amount must be multiple of 50.000 vnd, please try again.");
+                            Console.WriteLine("The amount must be multiple of 50.000 vnd, please try again.");
                             Console.ResetColor();
-                                return;
-                            }
-                            break;
+                        }
+                        else break;
                         }
                         break;
                     default:

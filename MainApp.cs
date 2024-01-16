@@ -30,7 +30,7 @@ namespace AppATM
                     case 4:accountListObj.ckeckAccount();
                         break;
                     case 5:
-                        Console.BackgroundColor = ConsoleColor.Green;
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Thank you for using my service. Good bye.");
                         Console.ResetColor();
                         break;
@@ -45,7 +45,9 @@ namespace AppATM
         }
         static void Menu()
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("----------WELCOME----------");
+            Console.ResetColor();
             Console.WriteLine("1. Create new account.");
             Console.WriteLine("2. Deposit");
             Console.WriteLine("3. Withdraw");

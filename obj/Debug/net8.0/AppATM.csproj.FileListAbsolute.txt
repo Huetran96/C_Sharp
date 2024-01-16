@@ -12,3 +12,4 @@ C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\n
 C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.pdb
 C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.genruntimeconfig.cache
 C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\ref\AppATM.dll
+C:\Users\Huetr\OneDrive\Documents\New folder (3)\C#_Tutorial\BankAcc\obj\Debug\net8.0\AppATM.sourcelink.json
