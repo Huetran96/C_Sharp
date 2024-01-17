@@ -5,6 +5,7 @@
         SortedList<string, Account> accountList = new SortedList<string, Account>();
         string currentID = null;
         int amount;
+        int cnt;
         public void create()
         {
             Account acc = new Account();
@@ -62,7 +63,6 @@
         }
         public void login()
         {
-            int cnt = 0;
             Console.WriteLine("Enter user ID: ");
             string lgID = Console.ReadLine();
             Console.WriteLine("Enter password: ");
@@ -84,55 +84,76 @@
                 if (cnt <= 5)
                 {
                     login();
-                }else
+                }
+                else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("You have failed 5 times, your account is locked.");
                     Console.ResetColor();
+
                 }
             }
         }
         public void deposit()
         {
             login();
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("DEPOSIT ACCOUNT SERVICE.");
-            Console.ResetColor();
-            Console.WriteLine("How much money do you want to deposit?");          
-            enterAmount();
-            Console.WriteLine("Insert money into, please!");
-            Console.WriteLine("Please wait for countting....");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Deposit acount successed. ");
-            Console.ResetColor();
-            accountList[currentID].Balance += amount;
-
-        }
-        public void withDraw()
-        {
-            login();
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("WITHDRAW ACCOUNT SERVICE.");
-            Console.ResetColor();
-            Console.WriteLine("How much money do you want to withdraw?");
-            enterAmount();
-            double fee = (amount * 0.067 / 100);
-            if ((amount + fee) < accountList[currentID].Balance)
-            {
-                Console.WriteLine("Please wait for countting....");
-                accountList[currentID].Balance -= (amount + fee);
-                Console.WriteLine("Take money, please!");
-                Console.ForegroundColor = ConsoleColor.Green;                
-                Console.WriteLine("Withdaw successed. ");
+            if (cnt <=5) {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("DEPOSIT ACCOUNT SERVICE.");
                 Console.ResetColor();
+                Console.WriteLine("How much money do you want to deposit?");
+                enterAmount();
+                Console.WriteLine("Insert money into, please!");
+                Console.WriteLine("Please wait for countting....");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Deposit acount successed. ");
+                Console.ResetColor();
+                accountList[currentID].Balance += amount;
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Balance is not enough.");
+                Console.WriteLine("Your account is locked, cannot be used .");
                 Console.ResetColor();
-                enterAmount();
+
             }
+        }
+        public void withDraw()
+        {
+            login();
+            if (cnt <=5)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("WITHDRAW ACCOUNT SERVICE.");
+                Console.ResetColor();
+                Console.WriteLine("How much money do you want to withdraw?");
+                enterAmount();
+                double fee = (amount * 0.067 / 100);
+                if ((amount + fee) < accountList[currentID].Balance)
+                {
+                    Console.WriteLine("Please wait for countting....");
+                    accountList[currentID].Balance -= (amount + fee);
+                    Console.WriteLine("Take money, please!");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Withdaw successed. ");
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Balance is not enough.");
+                    Console.ResetColor();
+                    enterAmount();
+                }
+
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Your account is locked, cannot be used .");
+                Console.ResetColor();
+            }
+            
         }
 
         public void ckeckAccount()
@@ -147,28 +168,28 @@
         public void enterAmount()
         {
             int op;
-                Console.WriteLine("1: 500.000 vnd");
-                Console.WriteLine("2: 1.000.000 vnd");
-                Console.WriteLine("3: 1.500.000 vnd");
-                Console.WriteLine("4: Other amount");
-                Console.WriteLine("Selecct amount:  ");
-                op = int.Parse(Console.ReadLine());
-                switch (op)
-                {
-                    case 1:
-                        amount = 500000;
-                        break;
-                    case 2:
-                        amount = 1000000;
-                        break;
-                    case 3:
-                        amount = 1500000;
-                        break;
-                    case 4:
-                        while (true)
-                        {
-                            Console.WriteLine("Enter amount: ");
-                            amount = int.Parse(Console.ReadLine());
+            Console.WriteLine("1: 500.000 vnd");
+            Console.WriteLine("2: 1.000.000 vnd");
+            Console.WriteLine("3: 1.500.000 vnd");
+            Console.WriteLine("4: Other amount");
+            Console.WriteLine("Selecct amount:  ");
+            op = int.Parse(Console.ReadLine());
+            switch (op)
+            {
+                case 1:
+                    amount = 500000;
+                    break;
+                case 2:
+                    amount = 1000000;
+                    break;
+                case 3:
+                    amount = 1500000;
+                    break;
+                case 4:
+                    while (true)
+                    {
+                        Console.WriteLine("Enter amount: ");
+                        amount = int.Parse(Console.ReadLine());
                         if (amount % 50000 != 0)
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
@@ -176,14 +197,14 @@
                             Console.ResetColor();
                         }
                         else break;
-                        }
-                        break;
-                    default:
+                    }
+                    break;
+                default:
                     Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Invalid, try again.");
-                    Console.ResetColor (); 
-                        break;
-                }
+                    Console.WriteLine("Invalid, try again.");
+                    Console.ResetColor();
+                    break;
+            }
 
         }
     }

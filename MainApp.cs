@@ -24,7 +24,6 @@ namespace AppATM
                         break;
                     case 2: accountListObj.deposit();
                         break;
-
                     case 3:accountListObj.withDraw();
                         break;
                     case 4:accountListObj.ckeckAccount();
